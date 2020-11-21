@@ -1,12 +1,9 @@
-package 排序;
+package Sort;
 
-/*
- * 2019.10.29  
- * 照着打的
- */
-public class 堆排序 {
+
+public class HeapSort {
 	public static void main(String[] args) {
-		int[] arr = getRandomArrays.getRandomArrays(10, 20);
+		int[] arr = GetRandomArrays.getRandomArrays(10, 20);
 		for (int a : arr)
 			System.out.print(a + " ");
 		heapSort(arr);
@@ -24,11 +21,11 @@ public class 堆排序 {
 			heapInsert(arr, i);
 		}
 		int heapSize = arr.length;
-		swap.swap(arr, 0, --heapSize);// 交换，有点“删”的味道在里面
+		Swap.swap(arr, 0, --heapSize);// 交换，有点“删”的味道在里面
 		//排序
 		while (heapSize > 0) {
 			heapify(arr, 0, heapSize); // 删完下沉，重新形成大根堆
-			swap.swap(arr, 0, --heapSize);
+			Swap.swap(arr, 0, --heapSize);
 		}
 	}
 
@@ -43,7 +40,7 @@ public class 堆排序 {
 			if (largest == index) {   //防止largest和index同为0时的死循环
 				break;
 			}
-			swap.swap(arr, largest, index);
+			Swap.swap(arr, largest, index);
 			index = largest;
 			left = index * 2 + 1;
 		}
@@ -58,7 +55,7 @@ public class 堆排序 {
 	private static void heapInsert(int[] arr, int index) {
 		// 防止出现arr[0]和arr[0]进行比较的过程
 		while (arr[index] > arr[(index - 1) / 2]) {
-			swap.swap(arr, index, (index - 1) / 2);
+			Swap.swap(arr, index, (index - 1) / 2);
 			index = (index - 1) / 2;
 		}
 		

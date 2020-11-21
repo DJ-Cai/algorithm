@@ -1,11 +1,11 @@
-package 排序;
+package Sort;
 
 /*
  * 2019.10.28
  */
-public class 快速排序 {
+public class QuickSort {
 	public static void main(String[] args) {
-		int[] arr = getRandomArrays.getRandomArrays(10, 20);
+		int[] arr = GetRandomArrays.getRandomArrays(10, 20);
 		System.out.print("排序前：");
 		for (int a : arr)
 			System.out.print(a + " ");
@@ -34,11 +34,11 @@ public class 快速排序 {
 			//三数取中:先确保应该一个地方为最大值，再去确定剩下两个中较大的那个
 			int mid = L+((R-L)>>1);
 			if(arr[L]<arr[R]) {
-				swap.swap(arr, L, R);
+				Swap.swap(arr, L, R);
 			}else if(arr[L]<arr[mid]) {
-				swap.swap(arr, L, mid);
+				Swap.swap(arr, L, mid);
 			}else if(arr[mid]>arr[R]) {
-				swap.swap(arr, mid, R);
+				Swap.swap(arr, mid, R);
 			}
 			
 			//数量若小于四，则转换为插入排序
@@ -59,10 +59,10 @@ public class 快速排序 {
 		int key = arr[R];
 		while (cur < more) {
 			if (arr[cur] < key)
-				swap.swap(arr, ++less, cur++);
+				Swap.swap(arr, ++less, cur++);
 			else if (arr[cur] > key)
 				//第一次交换其实是和arr[R]换的，此时改变了arr[R]、但一直都是和key比，key=arr[R]
-					swap.swap(arr, --more, cur);
+					Swap.swap(arr, --more, cur);
 			else {
 				cur++;//等于的情况
 			}

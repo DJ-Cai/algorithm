@@ -1,12 +1,12 @@
-package 排序;
+package Sort;
 
 /*
  * 2019.10.27 
  * 归并排序蕴含着分治的思想,二分的排序，不浪费排序
  */
-public class 归并排序 {
+public class MergeSort {
 	public static void main(String[] args) {
-		int[] arr = getRandomArrays.getRandomArrays(10, 20);
+		int[] arr = GetRandomArrays.getRandomArrays(10, 20);
 		System.out.print("排序前：");
 		for (int a : arr)
 			System.out.print(a + " ");

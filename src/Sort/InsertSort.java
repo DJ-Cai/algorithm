@@ -1,8 +1,8 @@
-package ≈≈–Ú;
+package Sort;
 
-public class ≤Â»Î≈≈–Ú {
+public class InsertSort {
 	public static void main(String[] args) {
-		int[] arrs = getRandomArrays.getRandomArrays(20, 20);
+		int[] arrs = GetRandomArrays.getRandomArrays(20, 20);
 		System.out.println("≈≈–Ú«∞");
 		for (int i : arrs) {
 			System.out.print(i + " ");

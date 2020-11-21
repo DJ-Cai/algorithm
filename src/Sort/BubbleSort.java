@@ -1,10 +1,10 @@
-package ≈≈–Ú;
+package Sort;
 
 
-public class √∞≈›≈≈–Ú {
+public class BubbleSort {
 	
 	public static void main(String[] args) {
-		int[] arrs=getRandomArrays.getRandomArrays(10, 50);
+		int[] arrs=GetRandomArrays.getRandomArrays(10, 50);
 		for(int arr:arrs)
 			System.out.print(arr+" ");
 		System.out.println();
@@ -26,7 +26,7 @@ public class √∞≈›≈≈–Ú {
 			boolean flag=true;
 			for(int j=0;j<arrs.length-1-i;j++) {
 				if(arrs[j]>arrs[j+1]) {
-					swap.swap(arrs, j, j+1);
+					Swap.swap(arrs, j, j+1);
 					flag=false;
 				}
 			}

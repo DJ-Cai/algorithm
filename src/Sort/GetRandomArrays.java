@@ -1,6 +1,6 @@
-package 排序;
+package Sort;
 
-public class getRandomArrays {
+public class GetRandomArrays {
 
 	public static int[] getRandomArrays(int size,int value) {  //获得随机数组
 		int[] arr = new int [(int)((size)*Math.random())];

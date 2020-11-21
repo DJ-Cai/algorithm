@@ -1,8 +1,8 @@
-package ≈≈–Ú;
+package Sort;
 
-public class —°‘Ò≈≈–Ú {
+public class SelectionSort {
 	public static void main(String[] args) {
-		int[] arrs=getRandomArrays.getRandomArrays(30, 20);
+		int[] arrs=GetRandomArrays.getRandomArrays(30, 20);
 		for(int i: arrs) {
 			System.out.print(i+" ");
 		}
@@ -22,7 +22,7 @@ public class —°‘Ò≈≈–Ú {
 		for(int i=0;i<arr.length-1;i++) {
 			for(int j=i+1;j<=arr.length-1;j++)
 				if(arr[i]>arr[j])
-					swap.swap(arr, i, j);
+					Swap.swap(arr, i, j);
 		}
 	}
 }
