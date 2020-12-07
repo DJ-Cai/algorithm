@@ -1,4 +1,4 @@
-package Sort;
+package SortAlgorithm;
 
 public class GetRandomArrays {
 

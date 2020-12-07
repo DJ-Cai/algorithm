@@ -1,4 +1,4 @@
-package Sort;
+package SortAlgorithm;
 
 /*
  * 2019.10.28
