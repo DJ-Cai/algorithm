@@ -2,7 +2,7 @@ package algorithm;
 
 import java.util.Arrays;
 
-public class No300_最长上升子序列 {
+public class LC300_最长上升子序列 {
 	/**
 	 * 给定一个无序的整数数组，找到其中最长上升子序列的长度。
 
