@@ -1,4 +1,4 @@
-package algorithm;
+package leetCode;
 
 public class LC518_¡„«Æ∂“ªª {
 	/**
