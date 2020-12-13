@@ -27,10 +27,13 @@ public class LC198_打家劫舍 {
         if(nums.length == 2){
             return Math.max(nums[0] , nums[1]);
         }
+        //定义：当前房子下，能打劫到的最高金额（可能不包含当前房子）
         int[] res = new int[nums.length];
         res[0] = nums[0];
         res[1] = Math.max(nums[0] , nums[1]);
         for(int i = 2 ; i < res.length ; i ++){
+        	//状态转移：打劫当前房子，则不能打劫前一间，所以是当前房子金额+上上间总金额；
+        	//		 不打劫当前房子，则是上一间的总金额
             res[i] = Math.max(res[i-2] + nums[i] , res[i-1]);
         }
         return res[res.length -1];
