@@ -50,7 +50,6 @@ public class LC78_×Ó¼¯ {
             res.add(newList);
 
         }
-        
         return res;
     }
     
