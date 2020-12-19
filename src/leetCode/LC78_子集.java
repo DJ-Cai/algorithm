@@ -54,9 +54,11 @@ public class LC78_子集 {
         return res;
     }
     
-    //法二：回溯
+    //法二：回溯  
     public static void backTrack(int[] nums , int index , ArrayList<Integer> tmp) {
+    	//拷贝一个当前list，因为决策树上每个节点都是一种解，需要加入结果集
     	res.add(new ArrayList<>(tmp));
+    	//以index为起点遍历数组，存入以后递归===意味着这个数暂时固定下来了，看这个数后的情况
         for (int i = index; i < nums.length; i++) {
             tmp.add(nums[i]);
             backTrack( nums, i+1, tmp);
